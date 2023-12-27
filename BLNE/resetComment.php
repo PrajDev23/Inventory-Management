@@ -1,0 +1,1 @@
+<textarea rows="1" cols="20" id="comment"  placeholder="Remarks..." onkeyup="getData13()"></textarea>

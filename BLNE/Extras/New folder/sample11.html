@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer>
+        document.getElementById("curtainInput").addEventListener(
+            "click",
+            function (event) {
+                if (event.target.value === "Open Curtain") {
+                    event.target.value = "Close Curtain";
+                } else {
+                    event.target.value = "Open Curtain";
+                }
+            },
+            false
+        );
+    </script>
+</head>
+<script>
+    function filter1() {
+
+        var btn = document.getElementById("filter");
+
+        if (btn.value == "0") {
+            btn.value = "1";
+            btn.innerHTML = "Filter OFF";
+        }
+        else {
+            btn.value = "0";
+            btn.innerHTML = "Filter ON";
+        }
+
+    }
+</script>
+
+<body>
+    <button onclick="filter1()" type="button" value="0" id="filter">Filter ON</button>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        function toggler(divId) {
+            $("#" + divId).toggle();
+        }</script>
+</head>
+
+<body>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+
+<a href="#Foo" class="btn btn-default" data-toggle="collapse"><button>Foo</button></a>
+<a href="#filter_data" class="btn btn-default" data-toggle="collapse">Toggle Bar</a>
+
+<div id="Bar" class="main-container collapse in">
+    This div (#Bar) is shown by default and can toggle
+</div>
+<div id="filter_data" class="main-container collapse">
+    This div (#Foo) is hidden by default
+</div>
+
+</body>
+
+</html>

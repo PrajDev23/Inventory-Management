@@ -1,0 +1,88 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.wrap {
+    max-width: 1280px;
+    margin: auto;
+    padding: 10px;
+    background: #f9f9f9;
+}
+
+.table-data {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-data td,
+.table-data th {
+    padding: 5px 10px;
+    border: 1px solid #000;
+}
+
+.table-data th {
+    background: #522d84;
+    color: #fff;
+}
+
+.advanced-filter {
+    position: relative;
+}
+
+.filter-panel {
+    position: absolute;
+    left: -999em;
+    width: 100%;
+    top: 100%;
+    z-index: 99;
+    opacity: 0;
+    background: #fff;
+    transition: opacity 1s ease, border 1s ease, left 0s 1s;
+    min-height: 100px;
+    margin: -3px 0 0;
+    border: 3px solid #522d84;
+    padding: 10px 10px 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.open-filter .filter-panel {
+    left: 0;
+    opacity: 1;
+    transition: opacity 1s ease, border 1s ease;
+}
+
+.advanced-filter-button {
+    background: #522d84;
+    color: #fff;
+    padding: 3px 10px;
+    border: 3px solid #522d84;
+    margin: 0 0 10px auto;
+    width: 150px;
+    display: block;
+    position: relative;
+    z-index: 100;
+}
+
+.open-filter .advanced-filter-button {
+    background: #fff;
+    border-bottom: none;
+    padding: 3px 10px 6px;
+    color: #000;
+    outline: 0;
+}
+
+.close {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background: #522d84;
+    color: #fff;
+    padding: 3px 10px;
+    border: 3px solid #522d84;
+}

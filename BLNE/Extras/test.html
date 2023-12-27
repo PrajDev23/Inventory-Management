@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="test.js"></script>
+</head>
+
+<body>
+    <select id="district" class="district" name="district" onChange="changecat(this.value);">
+        <!-- onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);"> -->
+        <option value="" disabled selected>Select District</option>
+        <option value="Alur">Alur</option>
+        <option value="Arkalgudu">Arkalgudu</option>
+        <option value="Arsikere">Arsikere</option>
+        <option value="Belur">Belur</option>
+        <option value="CR Patna">CR Patna</option>
+        <option value="Hassan">Hassan</option>
+        <option value="HN Pura">HN Pura</option>
+        <option value="MI - TV - WM">MI - TV - WM</option>
+        <option value="Personal">Personal</option>
+        <option value="Rajendra Kodagu">Rajendra Kodagu</option>
+        <option value="Sakaleshpura">Sakaleshpura</option>
+    </select>
+
+    <!-- //Taluk -->
+    <!-- <script type="text/javascript" language="JavaScript">
+        document.write('<select class="taluk" name="aname" id="aname" ><option value="" disabled selected>Select District</option></select>')
+    </script>
+    <noscript> -->
+        <select class="taluk" name="aname" id="aname" onChange="changecat2(this.value);">
+            <option value="" disabled selected>Select District</option>
+        </select>
+    <!-- </noscript> -->
+    <!-- //Shop Name -->
+    <select class="sname" name="sname">
+        <option value=""disabled selected>Shop name</option>
+    </select>
+    
+    
+    
+    
+    
+    <!-- <select name="meal" id="meal" onChange="changecat2(this.value);">
+        <option value="" disabled selected>Select</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+    </select>
+    <select name="category" id="category">
+        <option value="" disabled selected>Select</option>
+    </select> -->
+</body>
+
+</html>

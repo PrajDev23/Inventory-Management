@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .modal2 {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        #open_window2 {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        .close2 {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close2:hover,
+        .close2:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        
+    </script>
+
+</head>
+
+<body>
+    
+    <h2>Modal Example</h2>
+
+    <!-- Trigger/Open The Modal -->
+    <button id="add_element2" >Open Modal</button>
+
+    <!-- The Modal -->
+    <div id="content2" class="modal2">
+
+        <!-- Modal content -->
+        <div id="open_window2">
+            <span class="close2">&times;</span>
+            <p>Some text in the Modal..</p>
+            <p>Password:<input placeholder="CONFIRM "id="passwordBox" type="password" /></p>
+            <button type="button" onclick="Delete()">Enter</button>
+        </div>
+
+    </div>
+
+    <script>
+            var modal1 = document.getElementById("content2");
+            var btn1 = document.getElementById("add_element2");
+            var span1 = document.getElementsByClassName("close2")[0];
+            btn1.onclick = function () {
+                modal1.style.display = "block";
+            }
+            span1.onclick = function () {
+                modal1.style.display = "none";
+            }
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal1.style.display = "none";
+                }
+            }
+            function Delete() {
+            var del = document.getElementById("add_element2").id;
+            var password = document.getElementById("passwordBox");
+            var passwordText = password.value;
+            if (passwordText == "CONFIRM") {
+                alert(del);
+            }
+            else{
+                alert("wrong");
+            }
+            
+        }
+
+    </script>
+
+</body>
+
+</html>
